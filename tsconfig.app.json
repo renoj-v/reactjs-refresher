@@ -16,6 +16,5 @@
     "noUncheckedSideEffectImports": true,
     "skipLibCheck": true
   },
-  "include": ["playground/src", "runner", "modules", "test", "final-project"],
-  "exclude": ["modules/14-*"]
+  "include": ["playground/src", "runner", "lessons", "test", "final-project"]
 }

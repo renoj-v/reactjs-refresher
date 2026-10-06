@@ -31,9 +31,8 @@ export default defineConfig(({ mode }) => ({
   test: {
     environment: 'jsdom',
     setupFiles: [path.resolve('test/setup.ts')],
-    include: ['modules/**/*.test.{ts,tsx}', 'playground/**/*.test.{ts,tsx}', 'final-project/**/*.test.{ts,tsx}'],
-    // Module 14 is a separate Next.js project with its own test setup.
-    exclude: ['**/node_modules/**', 'modules/14-*/**'],
+    include: ['lessons/**/*.test.{ts,tsx}', 'playground/**/*.test.{ts,tsx}', 'final-project/**/*.test.{ts,tsx}'],
+    exclude: ['**/node_modules/**'],
     css: { modules: { classNameStrategy: 'non-scoped' } },
   },
 }))

@@ -4,8 +4,8 @@ import react, { reactCompilerPreset } from '@vitejs/plugin-react'
 import babel from '@rolldown/plugin-babel'
 
 // `npm run dev` serves /playground.
-// `npm run exercise 03 02` sets EXERCISE_DIR and serves /runner, which
-// renders that exercise's App.tsx (see scripts/exercise.mjs).
+// `npm run lesson 7` sets EXERCISE_DIR and serves /runner, which renders
+// that lesson's starter/App.tsx (see scripts/lesson.mjs).
 const exerciseDir = process.env.EXERCISE_DIR
 
 export default defineConfig({

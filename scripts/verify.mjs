@@ -1,8 +1,8 @@
 #!/usr/bin/env node
-// Course self-check: every exercise test file must FAIL against starter/
+// Course self-check: every lesson's test file must FAIL against starter/
 // and PASS against solution/.
-//   npm run verify                → all modules
-//   npm run verify -- modules/02  → one module
+//   npm run verify                → all lessons
+//   npm run verify -- lessons/07  → one lesson
 import { spawnSync } from 'node:child_process'
 import { mkdtempSync, readFileSync } from 'node:fs'
 import { tmpdir } from 'node:os'
@@ -13,7 +13,7 @@ const outDir = mkdtempSync(path.join(tmpdir(), 'verify-'))
 
 function run(mode) {
   const outputFile = path.join(outDir, `${mode}.json`)
-  const args = ['vitest', 'run', ...filters, '--reporter=json', `--outputFile=${outputFile}`, 'modules/']
+  const args = ['vitest', 'run', ...filters, '--reporter=json', `--outputFile=${outputFile}`, 'lessons/']
   if (mode === 'solution') args.push('--mode', 'solution')
   spawnSync('npx', args, { stdio: ['ignore', 'ignore', 'inherit'], shell: process.platform === 'win32' })
   const report = JSON.parse(readFileSync(outputFile, 'utf8'))

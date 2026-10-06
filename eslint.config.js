@@ -13,7 +13,7 @@ const hooksRulesAsWarnings = Object.fromEntries(
 )
 
 export default defineConfig([
-  globalIgnores(['**/dist', '**/.next', 'modules/14-*']),
+  globalIgnores(['**/dist', '**/.next']),
   {
     files: ['**/*.{ts,tsx}'],
     extends: [
@@ -32,9 +32,9 @@ export default defineConfig([
     },
   },
   {
-    // Tests and config files don't need Fast Refresh rules. Exercises deliberately
+    // Tests and config files don't need Fast Refresh rules. Lessons deliberately
     // keep helpers next to components in one file so each task stays self-contained.
-    files: ['**/*.test.{ts,tsx}', '*.config.ts', 'runner/**', 'modules/**'],
+    files: ['**/*.test.{ts,tsx}', '*.config.ts', 'runner/**', 'lessons/**'],
     rules: { 'react-refresh/only-export-components': 'off' },
   },
   {

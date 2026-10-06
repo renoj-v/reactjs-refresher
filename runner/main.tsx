@@ -1,6 +1,6 @@
 import { StrictMode } from 'react'
 import { createRoot } from 'react-dom/client'
-// `@exercise` is aliased to the exercise folder picked by `npm run exercise`.
+// `@exercise` is aliased to the lesson folder picked by `npm run lesson`.
 import App from '@exercise/App'
 import './runner.css'
 

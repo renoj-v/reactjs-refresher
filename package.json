@@ -9,7 +9,7 @@
   },
   "scripts": {
     "dev": "vite",
-    "exercise": "node scripts/exercise.mjs",
+    "lesson": "node scripts/lesson.mjs",
     "test": "vitest",
     "test:solutions": "vitest run --mode solution",
     "verify": "node scripts/verify.mjs",
