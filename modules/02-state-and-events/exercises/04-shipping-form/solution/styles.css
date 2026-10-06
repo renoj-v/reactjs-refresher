@@ -1,0 +1,42 @@
+.checkout {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1.5rem;
+  align-items: start;
+}
+fieldset {
+  display: grid;
+  gap: 0.75rem;
+  border: 1px solid #ccc4;
+  border-radius: 12px;
+  padding: 1rem;
+}
+label {
+  display: grid;
+  gap: 0.25rem;
+  font-size: 0.9rem;
+}
+label.checkbox {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+input,
+select {
+  padding: 0.4rem 0.5rem;
+  font: inherit;
+}
+.actions {
+  display: flex;
+  justify-content: flex-end;
+  gap: 0.5rem;
+}
+aside {
+  border-radius: 12px;
+  padding: 1rem;
+  background: #f1f5f9;
+  color: #0f172a;
+}
+aside h3 {
+  margin-top: 0;
+}

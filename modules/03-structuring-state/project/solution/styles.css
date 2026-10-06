@@ -1,0 +1,61 @@
+.board {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
+  align-items: start;
+}
+.column {
+  background: #f1f5f9;
+  color: #0f172a;
+  border-radius: 12px;
+  padding: 0.75rem;
+  display: grid;
+  gap: 0.5rem;
+}
+.column h2 {
+  font-size: 0.95rem;
+  margin: 0;
+}
+.column ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: grid;
+  gap: 0.5rem;
+}
+.card {
+  background: white;
+  border-radius: 8px;
+  padding: 0.5rem 0.6rem;
+  box-shadow: 0 1px 2px #0002;
+}
+.card-actions {
+  display: flex;
+  gap: 0.15rem;
+  margin-top: 0.35rem;
+}
+.card-actions button {
+  border: none;
+  background: #e2e8f0;
+  border-radius: 4px;
+  cursor: pointer;
+  padding: 0.1rem 0.4rem;
+}
+.card-actions button:disabled {
+  opacity: 0.35;
+  cursor: not-allowed;
+}
+.add-card {
+  display: flex;
+  gap: 0.25rem;
+}
+.add-card input {
+  flex: 1;
+  min-width: 0;
+  font: inherit;
+  padding: 0.25rem 0.4rem;
+}
+.summary {
+  text-align: center;
+  opacity: 0.7;
+}

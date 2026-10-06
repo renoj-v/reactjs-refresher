@@ -1,0 +1,28 @@
+.stack {
+  display: grid;
+  gap: 1rem;
+  max-width: 360px;
+}
+.card {
+  border: 1px solid #ccc4;
+  border-radius: 12px;
+  padding: 1rem;
+}
+.card h2 {
+  margin: 0 0 0.75rem;
+  font-size: 1.1rem;
+}
+.card footer {
+  margin-top: 1rem;
+  padding-top: 0.75rem;
+  border-top: 1px solid #ccc4;
+}
+.avatar {
+  display: inline-grid;
+  place-items: center;
+  border-radius: 50%;
+  object-fit: cover;
+  background: #6366f1;
+  color: white;
+  font-weight: 600;
+}

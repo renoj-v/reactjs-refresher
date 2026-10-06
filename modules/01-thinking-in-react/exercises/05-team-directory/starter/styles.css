@@ -1,0 +1,30 @@
+.directory section {
+  margin-bottom: 1.5rem;
+}
+.directory h2 {
+  font-size: 1rem;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  opacity: 0.7;
+}
+.directory ul {
+  list-style: none;
+  padding: 0;
+  border: 1px solid #ccc4;
+  border-radius: 12px;
+}
+.directory li {
+  display: flex;
+  justify-content: space-between;
+  padding: 0.6rem 1rem;
+}
+.directory li + li {
+  border-top: 1px solid #ccc4;
+}
+.on-call {
+  font-size: 0.75rem;
+  background: #fde68a;
+  color: #78350f;
+  border-radius: 999px;
+  padding: 0.1rem 0.5rem;
+}

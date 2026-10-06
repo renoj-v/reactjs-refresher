@@ -1,0 +1,34 @@
+.accordion {
+  max-width: 560px;
+  border: 1px solid #ccc4;
+  border-radius: 12px;
+  overflow: hidden;
+}
+.panel + .panel {
+  border-top: 1px solid #ccc4;
+}
+.panel h3 {
+  margin: 0;
+}
+.panel button {
+  width: 100%;
+  text-align: left;
+  padding: 0.9rem 1rem;
+  font: inherit;
+  font-weight: 600;
+  background: transparent;
+  border: none;
+  color: inherit;
+  cursor: pointer;
+}
+.panel button::after {
+  content: '+';
+  float: right;
+}
+.panel button[aria-expanded='true']::after {
+  content: '−';
+}
+.panel p {
+  margin: 0;
+  padding: 0 1rem 1rem;
+}

@@ -1,0 +1,37 @@
+.tiles {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 1rem;
+}
+.tile {
+  border: 1px solid #ccc4;
+  border-radius: 12px;
+  padding: 1rem;
+}
+.tile h3 {
+  margin: 0 0 0.5rem;
+}
+.badges {
+  display: flex;
+  gap: 0.25rem;
+  min-height: 1.5rem;
+}
+.badge {
+  font-size: 0.75rem;
+  padding: 0.1rem 0.5rem;
+  border-radius: 999px;
+  color: white;
+}
+.badge-danger { background: #dc2626; }
+.badge-warning { background: #d97706; }
+.badge-sale { background: #16a34a; }
+.price del {
+  opacity: 0.6;
+  margin-left: 0.5rem;
+}
+.reviews {
+  display: block;
+  font-size: 0.85rem;
+  opacity: 0.8;
+  margin-bottom: 0.5rem;
+}

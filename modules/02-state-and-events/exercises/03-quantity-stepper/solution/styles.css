@@ -1,0 +1,36 @@
+.product {
+  max-width: 320px;
+}
+.stepper {
+  display: inline-flex;
+  align-items: center;
+  border: 1px solid #ccc8;
+  border-radius: 999px;
+  overflow: hidden;
+}
+.stepper button {
+  width: 2.5rem;
+  height: 2.5rem;
+  border: none;
+  background: transparent;
+  font-size: 1.25rem;
+  cursor: pointer;
+  color: inherit;
+}
+.stepper button:disabled {
+  opacity: 0.3;
+  cursor: not-allowed;
+}
+.stepper output {
+  min-width: 2rem;
+  text-align: center;
+  font-variant-numeric: tabular-nums;
+}
+.limit {
+  font-size: 0.85rem;
+  color: #d97706;
+}
+.hint-text {
+  font-size: 0.8rem;
+  opacity: 0.6;
+}

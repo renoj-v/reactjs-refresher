@@ -1,0 +1,28 @@
+.scoreboard {
+  display: grid;
+  justify-items: center;
+  gap: 1rem;
+  padding: 2rem;
+  border-radius: 16px;
+  background: #0f172a;
+  color: #f8fafc;
+  max-width: 420px;
+}
+.scoreboard output {
+  font-size: 4rem;
+  font-variant-numeric: tabular-nums;
+  font-weight: 700;
+  color: #fbbf24;
+}
+.buttons {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 0.5rem;
+}
+.buttons button {
+  padding: 0.4rem 0.8rem;
+  border-radius: 8px;
+  border: none;
+  cursor: pointer;
+}

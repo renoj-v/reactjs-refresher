@@ -1,0 +1,30 @@
+.tasks {
+  max-width: 460px;
+}
+.add-row {
+  display: flex;
+  gap: 0.5rem;
+}
+.add-row input {
+  flex: 1;
+  font: inherit;
+  padding: 0.35rem 0.5rem;
+}
+.tasks ul {
+  list-style: none;
+  padding: 0;
+}
+.tasks li {
+  display: flex;
+  align-items: center;
+  gap: 0.25rem;
+  padding: 0.4rem 0;
+  border-bottom: 1px solid #ccc4;
+}
+.tasks li label {
+  flex: 1;
+}
+.tasks li:has(input:checked) label {
+  text-decoration: line-through;
+  opacity: 0.6;
+}

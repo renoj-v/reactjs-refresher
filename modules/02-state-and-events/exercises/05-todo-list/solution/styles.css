@@ -1,0 +1,50 @@
+.todos {
+  max-width: 480px;
+}
+.add-row {
+  display: flex;
+  gap: 0.5rem;
+  align-items: end;
+}
+.add-row label {
+  display: grid;
+  flex: 1;
+  font-size: 0.85rem;
+}
+.add-row input {
+  font: inherit;
+  padding: 0.4rem 0.5rem;
+}
+.todos ul {
+  list-style: none;
+  padding: 0;
+}
+.todos li {
+  display: flex;
+  align-items: center;
+  gap: 0.25rem;
+  padding: 0.4rem 0;
+  border-bottom: 1px solid #ccc4;
+}
+.todos li label {
+  flex: 1;
+}
+.todos li:has(input:checked) label {
+  text-decoration: line-through;
+  opacity: 0.6;
+}
+.todos li button {
+  border: none;
+  background: transparent;
+  cursor: pointer;
+  color: inherit;
+}
+.todos li button:disabled {
+  opacity: 0.25;
+}
+.status {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 0.9rem;
+}

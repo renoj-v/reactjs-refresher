@@ -1,0 +1,57 @@
+.messenger {
+  display: grid;
+  grid-template-columns: 160px 1fr;
+  border: 1px solid #ccc4;
+  border-radius: 12px;
+  overflow: hidden;
+  min-height: 320px;
+}
+.messenger nav {
+  display: grid;
+  align-content: start;
+  background: #f1f5f9;
+}
+.messenger nav button {
+  padding: 0.75rem 1rem;
+  text-align: left;
+  border: none;
+  background: transparent;
+  cursor: pointer;
+  color: #0f172a;
+}
+.messenger nav button[aria-pressed='true'] {
+  background: #4f46e5;
+  color: white;
+}
+.thread {
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+  padding: 1rem;
+}
+.thread h2 {
+  margin: 0;
+  font-size: 1.1rem;
+}
+.thread ul {
+  list-style: none;
+  padding: 0;
+  display: grid;
+  align-content: start;
+  gap: 0.4rem;
+}
+.thread li {
+  justify-self: end;
+  background: #4f46e5;
+  color: white;
+  border-radius: 12px 12px 2px 12px;
+  padding: 0.35rem 0.75rem;
+}
+.compose {
+  display: flex;
+  gap: 0.5rem;
+}
+.compose input {
+  flex: 1;
+  font: inherit;
+  padding: 0.4rem 0.6rem;
+}

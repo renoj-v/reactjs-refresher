@@ -1,0 +1,29 @@
+.planner {
+  display: grid;
+  grid-template-columns: 1fr 220px;
+  gap: 1.5rem;
+  align-items: start;
+}
+.planner ol {
+  display: grid;
+  gap: 0.5rem;
+  padding-left: 1.25rem;
+}
+.planner li input {
+  font: inherit;
+  padding: 0.25rem 0.4rem;
+  margin-right: 0.25rem;
+}
+.planner li input[type='number'] {
+  width: 4rem;
+}
+.planner button[aria-pressed='true'] {
+  background: #4f46e5;
+  color: white;
+}
+.details {
+  padding: 1rem;
+  border-radius: 12px;
+  background: #eef2ff;
+  color: #1e1b4b;
+}
